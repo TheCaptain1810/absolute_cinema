@@ -19,35 +19,35 @@ export default function TabLayout() {
       <Tabs.Screen
         name='popular'
         options={{
-          title: "Popular",
+          tabBarLabel: "Popular",
           tabBarIcon: ({ color }) => <MaterialIcons size={28} name="explore" color={color} />,
         }}
       />
       <Tabs.Screen
         name='search'
         options={{
-          title: "Search",
+          tabBarLabel: "Search",
           tabBarIcon: ({ color }) => <MaterialIcons size={28} name="search" color={color} />,
         }}
       />
       <Tabs.Screen
         name='addnew'
         options={{
-          title: "Addnew",
+          tabBarLabel: "Addnew",
           tabBarIcon: ({ color }) => <MaterialIcons size={28} name="add-circle" color={color} />,
         }}
       />
       <Tabs.Screen
         name='activity'
         options={{
-          title: "Activity",
+          tabBarLabel: "Activity",
           tabBarIcon: ({ color }) => <MaterialIcons size={28} name="flash-on" color={color} />,
         }}
       />
       <Tabs.Screen
         name='profile'
         options={{
-          title: "Profile",
+          tabBarLabel: "Profile",
           tabBarIcon: ({ color }) => <MaterialIcons size={28} name="manage-accounts" color={color} />,
         }}
       />
