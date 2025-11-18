@@ -6,7 +6,7 @@ import { HapticTab } from '@/components/haptic-tab';
 import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
 
-export default function TabLayout() {
+export default function ActivityTabsLayout() {
     const colorScheme = useColorScheme();
 
     return (
@@ -19,32 +19,23 @@ export default function TabLayout() {
             <Tabs.Screen
                 name="index"
                 options={{
-                    title: 'Films',
-                    tabBarIcon: ({ color }) => <MaterialIcons size={28} name="movie" color={color} />,
+                    title: 'Friends',
+                    tabBarIcon: ({ color }) => <MaterialIcons size={28} name="people" color={color} />,
                 }}
             />
             <Tabs.Screen
-                name="reviews"
+                name="you"
                 options={{
-                    title: 'Reviews',
-                    tabBarIcon: ({ color }) => <MaterialIcons size={28} name="star-half" color={color} />,
+                    title: 'You',
                 }}
             />
             <Tabs.Screen
-                name="lists"
+                name="incoming"
                 options={{
-                    title: 'Lists',
-                    tabBarIcon: ({ color }) => <MaterialIcons size={28} name="list" color={color} />,
+                    title: 'Incoming',
+                    tabBarIcon: ({ color }) => <MaterialIcons size={28} name="call-received" color={color} />,
                 }}
             />
-            <Tabs.Screen
-                name="journal"
-                options={{
-                    title: 'Journal',
-                    tabBarIcon: ({ color }) => <MaterialIcons size={28} name="article" color={color} />,
-                }}
-            />
-
         </Tabs>
     );
 }

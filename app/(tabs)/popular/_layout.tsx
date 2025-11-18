@@ -6,7 +6,7 @@ import { HapticTab } from '@/components/haptic-tab';
 import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
 
-export default function TabLayout() {
+export default function PopularTabsLayout() {
     const colorScheme = useColorScheme();
 
     return (
